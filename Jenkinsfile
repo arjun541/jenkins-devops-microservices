@@ -3,7 +3,9 @@
 //Declarative
 
 pipeline{
-agent any
+agent {
+	docker {image 'jenkins:3.9'}
+}
 stages{
 	stage('Build'){
 		steps{
