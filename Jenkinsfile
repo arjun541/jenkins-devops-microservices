@@ -3,8 +3,16 @@
 //Declarative
 
 pipeline{
-agent {docker {image 'jenkins:3.6.3'}}
+agent {docker {image 'jenkins:3.6.3'}
+args '-u root:root'}
 stages{
+
+	stage('Permision'){
+		steps{
+			sh 'chmod 775*'
+		}
+
+	}
 	stage('Build'){
 		steps{
 			echo "Build";
