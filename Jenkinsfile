@@ -24,5 +24,17 @@ stages{
 		}
 	}
 }
+post{
+
+	always{
+		echo " i run always"
+	}
+	success{
+		echo " i run when sucess"
+	}
+	failure{
+		echo " i run when failure"
+	}
+}
 
 }
