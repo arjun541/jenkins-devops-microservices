@@ -4,7 +4,7 @@
 
 pipeline{
 agent {docker {image 'jenkins:3.6.3'
-args '-u root:root'}
+}
 }
 stages{
 
