@@ -3,8 +3,9 @@
 //Declarative
 
 pipeline{
-agent {docker {image 'jenkins:3.6.3'}
+agent {docker {image 'jenkins:3.6.3'
 args '-u root:root'}
+}
 stages{
 
 	stage('Permision'){
