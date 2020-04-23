@@ -4,7 +4,7 @@
 
 pipeline{
 agent {
-	docker {image 'jenkins:3.9'}
+	docker {image 'jenkins:3.6.3'}
 }
 stages{
 	stage('Build'){
