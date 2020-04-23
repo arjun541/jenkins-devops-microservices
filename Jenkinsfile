@@ -20,7 +20,7 @@ stages{
 
 	stage('Integration Test'){
 		steps{
-			echo "Integration Test1";
+			echo "Integration Test2";
 		}
 	}
 }
